@@ -1,9 +1,19 @@
 const registerFields = [
-  { id: 'name', label: 'Nome', type: 'text', autoComplete: 'name' },
-  { id: 'cpf', label: 'CPF', type: 'text', autoComplete: 'off' },
-  { id: 'phone', label: 'Telefone', type: 'tel', autoComplete: 'tel' },
-  { id: 'register-email', label: 'E-mail', type: 'email', autoComplete: 'email' },
-  { id: 'register-password', label: 'Senha', type: 'password', autoComplete: 'new-password' },
+  { id: "name", label: "Nome", type: "text", autoComplete: "name" },
+  { id: "cpf", label: "CPF", type: "text", autoComplete: "off" },
+  { id: "phone", label: "Telefone", type: "tel", autoComplete: "tel" },
+  {
+    id: "register-email",
+    label: "E-mail",
+    type: "email",
+    autoComplete: "email",
+  },
+  {
+    id: "register-password",
+    label: "Senha",
+    type: "password",
+    autoComplete: "new-password",
+  },
 ];
 
 function FormField({ id, label, type, autoComplete }) {
@@ -16,7 +26,7 @@ function FormField({ id, label, type, autoComplete }) {
 }
 
 function AuthForm({ mode }) {
-  const isRegister = mode === 'register';
+  const isRegister = mode === "register";
 
   return (
     <form className="auth-form" onSubmit={(event) => event.preventDefault()}>
@@ -24,14 +34,20 @@ function AuthForm({ mode }) {
         registerFields.map((field) => <FormField key={field.id} {...field} />)
       ) : (
         <>
-          <FormField id="email" label="E-mail" type="email" autoComplete="email" />
-          <FormField id="password" label="Senha" type="password" autoComplete="current-password" />
+          <FormField
+            id="email"
+            label="E-mail"
+            type="email"
+            autoComplete="email"
+          />
+          <FormField
+            id="password"
+            label="Senha"
+            type="password"
+            autoComplete="current-password"
+          />
         </>
       )}
-
-      <div className="auth-warning">
-        Senha incorreta. Tente novamente.
-      </div>
 
       {!isRegister && (
         <div className="auth-options">
@@ -44,7 +60,7 @@ function AuthForm({ mode }) {
       )}
 
       <button className="auth-submit" type="submit">
-        {isRegister ? 'Cadastrar-se' : 'Entrar'}
+        {isRegister ? "Cadastrar-se" : "Entrar"}
         <span aria-hidden="true">-&gt;</span>
       </button>
 
@@ -58,7 +74,7 @@ function AuthForm({ mode }) {
       )}
 
       <p className="auth-terms">
-        Ao continuar, voce concorda com nossos <a href="#terms">Termos</a> e{' '}
+        Ao continuar, voce concorda com nossos <a href="#terms">Termos</a> e{" "}
         <a href="#privacy">Politica de Privacidade</a>
       </p>
     </form>

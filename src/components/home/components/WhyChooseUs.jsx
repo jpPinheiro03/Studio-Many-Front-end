@@ -1,4 +1,4 @@
-import { benefits } from '../data/benefits.js';
+import { benefits } from "../data/benefits.js";
 
 function WhyChooseUs() {
   return (

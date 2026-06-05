@@ -8,11 +8,15 @@ function Header({ onLoginClick }) {
 
       <nav className="main-nav" aria-label="Navegacao principal">
         <a className="nav-link active" href="#home">
-          <span className="nav-icon" aria-hidden="true">H</span>
+          <span className="nav-icon" aria-hidden="true">
+            H
+          </span>
           Home
         </a>
         <a className="nav-link" href="#servicos">
-          <span className="nav-icon" aria-hidden="true">S</span>
+          <span className="nav-icon" aria-hidden="true">
+            S
+          </span>
           Servicos
         </a>
       </nav>

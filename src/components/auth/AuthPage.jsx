@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import AuthAside from './components/AuthAside.jsx';
-import AuthForm from './components/AuthForm.jsx';
+import { useState } from "react";
+import AuthAside from "./components/AuthAside.jsx";
+import AuthForm from "./components/AuthForm.jsx";
 
-function AuthPage({ initialMode = 'login', onBackHome }) {
+function AuthPage({ initialMode = "login", onBackHome }) {
   const [mode, setMode] = useState(initialMode);
 
   return (
@@ -10,7 +10,12 @@ function AuthPage({ initialMode = 'login', onBackHome }) {
       <section className="auth-card" aria-label="Acesso a conta">
         <AuthAside />
         <div className="auth-panel">
-          <button className="auth-close" type="button" onClick={onBackHome} aria-label="Voltar para home">
+          <button
+            className="auth-close"
+            type="button"
+            onClick={onBackHome}
+            aria-label="Voltar para home"
+          >
             x
           </button>
 
@@ -19,22 +24,26 @@ function AuthPage({ initialMode = 'login', onBackHome }) {
             <p>Entre ou crie sua conta para comecar.</p>
           </div>
 
-          <div className="auth-tabs" role="tablist" aria-label="Opcoes de acesso">
+          <div
+            className="auth-tabs"
+            role="tablist"
+            aria-label="Opcoes de acesso"
+          >
             <button
-              className={mode === 'login' ? 'active' : ''}
+              className={mode === "login" ? "active" : ""}
               type="button"
               role="tab"
-              aria-selected={mode === 'login'}
-              onClick={() => setMode('login')}
+              aria-selected={mode === "login"}
+              onClick={() => setMode("login")}
             >
               Entrar
             </button>
             <button
-              className={mode === 'register' ? 'active' : ''}
+              className={mode === "register" ? "active" : ""}
               type="button"
               role="tab"
-              aria-selected={mode === 'register'}
-              onClick={() => setMode('register')}
+              aria-selected={mode === "register"}
+              onClick={() => setMode("register")}
             >
               Cadastrar
             </button>

@@ -1,13 +1,16 @@
 const heroHighlights = [
-  'Profissionais certificados',
-  'Tecnologia avancada',
-  '+2.000 clientes',
+  "Profissionais certificados",
+  "Tecnologia avancada",
+  "+2.000 clientes",
 ];
 
 function Hero() {
   return (
     <section className="hero-section" id="home" aria-labelledby="hero-title">
-      <div className="hero-media-placeholder" aria-label="Espaco para imagem principal da clinica" />
+      <div
+        className="hero-media-placeholder"
+        aria-label="Espaco para imagem principal da clinica"
+      />
       <div className="hero-overlay" />
 
       <div className="hero-content">

@@ -1,8 +1,12 @@
-import { services } from '../data/services.js';
+import { services } from "../data/services.js";
 
 function PopularServices() {
   return (
-    <section className="content-section" id="servicos" aria-labelledby="services-title">
+    <section
+      className="content-section"
+      id="servicos"
+      aria-labelledby="services-title"
+    >
       <div className="section-header">
         <div>
           <h2 id="services-title">Servicos mais populares</h2>
