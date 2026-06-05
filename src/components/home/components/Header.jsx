@@ -1,4 +1,4 @@
-function Header() {
+function Header({ onLoginClick }) {
   return (
     <header className="site-header">
       <a className="brand" href="#home" aria-label="Studio Many - inicio">
@@ -17,10 +17,15 @@ function Header() {
         </a>
       </nav>
 
-      <a className="header-action" href="#agendar">
-        <span aria-hidden="true">+</span>
-        Agendar Agora
-      </a>
+      <div className="header-actions">
+        <button className="ghost-action" type="button" onClick={onLoginClick}>
+          Login
+        </button>
+        <a className="header-action" href="#agendar">
+          <span aria-hidden="true">+</span>
+          Agendar Agora
+        </a>
+      </div>
     </header>
   );
 }
