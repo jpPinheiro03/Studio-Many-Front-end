@@ -1,16 +1,25 @@
-import React from 'react';
-import './style.css';
-import Cadastrar from './components/Cadastrar';
-import Login from './components/Login';
+import "./style.css";
+import { useState } from "react";
+import AuthPage from "./components/auth/AuthPage.jsx";
+import HomePage from "./components/home/HomePage.jsx";
 
 function App() {
-  return (
-    <div className="container">
-      <h1>Sistema de Cadastro e Login</h1>
-      <Cadastrar />
-      <Login />
-    </div>
-  );
+  const [page, setPage] = useState("home");
+  const [authMode, setAuthMode] = useState("login");
+
+  const openAuthPage = (mode = "login") => {
+    setAuthMode(mode);
+    setPage("auth");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  if (page === "auth") {
+    return (
+      <AuthPage initialMode={authMode} onBackHome={() => setPage("home")} />
+    );
+  }
+
+  return <HomePage onLoginClick={() => openAuthPage("login")} />;
 }
 
 export default App;
