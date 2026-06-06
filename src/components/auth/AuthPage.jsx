@@ -2,7 +2,7 @@ import { useState } from "react";
 import AuthAside from "./components/AuthAside.jsx";
 import AuthForm from "./components/AuthForm.jsx";
 
-function AuthPage({ initialMode = "login", onBackHome }) {
+function AuthPage({ initialMode = "login", onBackHome, onSuccess }) {
   const [mode, setMode] = useState(initialMode);
 
   return (
@@ -21,14 +21,10 @@ function AuthPage({ initialMode = "login", onBackHome }) {
 
           <div className="auth-heading">
             <h1>Acesse sua conta</h1>
-            <p>Entre ou crie sua conta para comecar.</p>
+            <p>Entre ou crie sua conta para começar.</p>
           </div>
 
-          <div
-            className="auth-tabs"
-            role="tablist"
-            aria-label="Opcoes de acesso"
-          >
+          <div className="auth-tabs" role="tablist" aria-label="Opções de acesso">
             <button
               className={mode === "login" ? "active" : ""}
               type="button"
@@ -49,7 +45,7 @@ function AuthPage({ initialMode = "login", onBackHome }) {
             </button>
           </div>
 
-          <AuthForm mode={mode} />
+          <AuthForm mode={mode} onModeChange={setMode} onSuccess={onSuccess} />
         </div>
       </section>
     </main>
