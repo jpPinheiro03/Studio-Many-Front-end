@@ -4,10 +4,10 @@ import PopularServices from "./components/PopularServices.jsx";
 import WhyChooseUs from "./components/WhyChooseUs.jsx";
 import Footer from "./components/Footer.jsx";
 
-function HomePage({ onLoginClick }) {
+function HomePage({ onLoginClick, onLogout }) {
   return (
     <div className="site-shell">
-      <Header onLoginClick={onLoginClick} />
+      <Header onLoginClick={onLoginClick} onLogout={onLogout} />
       <main>
         <Hero />
         <PopularServices />
