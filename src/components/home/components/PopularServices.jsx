@@ -9,7 +9,7 @@ function PopularServices() {
     >
       <div className="section-header">
         <div>
-          <h2 id="services-title">Servicos mais populares</h2>
+          <h2 id="services-title">Serviços mais populares</h2>
           <p>Procedimentos escolhidos pelas nossas clientes</p>
         </div>
 

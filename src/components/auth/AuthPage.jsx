@@ -7,7 +7,7 @@ function AuthPage({ initialMode = "login", onBackHome, onSuccess }) {
 
   return (
     <main className="auth-page">
-      <section className="auth-card" aria-label="Acesso a conta">
+      <section className="auth-card" aria-label="Acesso à conta">
         <AuthAside />
         <div className="auth-panel">
           <button

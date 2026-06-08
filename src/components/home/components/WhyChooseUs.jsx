@@ -5,10 +5,10 @@ function WhyChooseUs() {
     <section className="why-section" aria-labelledby="why-title">
       <div className="why-header">
         <span className="eyebrow light">Por que nos escolher</span>
-        <h2 id="why-title">Excelencia em cada detalhe</h2>
+        <h2 id="why-title">Excelência em cada detalhe</h2>
         <p>
           Combinamos tecnologia, profissionais qualificados e um ambiente
-          acolhedor para a sua melhor experiencia.
+          acolhedor para a sua melhor experiência.
         </p>
       </div>
 

@@ -1,14 +1,14 @@
 const accessBenefits = [
   {
     title: "Agendamento online 24h",
-    description: "Reserve seu horario a qualquer momento.",
+    description: "Reserve seu horário a qualquer momento.",
   },
   {
     title: "Profissionais certificados",
     description: "Equipe especializada e experiente.",
   },
   {
-    title: "Historico completo",
+    title: "Histórico completo",
     description: "Acompanhe todos os seus tratamentos.",
   },
 ];
@@ -18,7 +18,7 @@ function AuthAside() {
     <aside className="auth-aside">
       <div
         className="auth-aside-image-placeholder"
-        aria-label="Espaco para imagem da area de acesso"
+        aria-label="Espaço para imagem da área de acesso"
       />
       <div className="auth-aside-overlay" />
 
@@ -27,7 +27,7 @@ function AuthAside() {
         <h2>Sua beleza, nossa prioridade.</h2>
         <p>
           Acesse sua conta para gerenciar seus agendamentos, acompanhar seu
-          historico e descobrir tratamentos exclusivos para realcar sua beleza
+          histórico e descobrir tratamentos exclusivos para realçar sua beleza
           natural.
         </p>
 

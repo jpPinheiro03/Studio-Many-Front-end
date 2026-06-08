@@ -2,21 +2,21 @@ export const benefits = [
   {
     icon: 'C',
     title: 'Profissionais Certificados',
-    description: 'Equipe formada por dermatologistas e biomodicos com vasta experiencia clinica.',
+    description: 'Equipe formada por dermatologistas e biomédicos com vasta experiência clínica.',
   },
   {
     icon: 'T',
-    title: 'Tecnologia Avancada',
-    description: 'Equipamentos de ultima geracao e protocolos clinicos comprovados cientificamente.',
+    title: 'Tecnologia Avançada',
+    description: 'Equipamentos de última geração e protocolos clínicos comprovados cientificamente.',
   },
   {
     icon: 'R',
     title: 'Resultados Naturais',
-    description: 'Tratamentos personalizados que valorizam a sua beleza unica e autentica.',
+    description: 'Tratamentos personalizados que valorizam a sua beleza única e autêntica.',
   },
   {
     icon: 'H',
     title: 'Atendimento Humanizado',
-    description: 'Cuidado proximo, ambiente acolhedor e escuta ativa em cada consulta realizada.',
+    description: 'Cuidado próximo, ambiente acolhedor e escuta ativa em cada consulta realizada.',
   },
 ];
